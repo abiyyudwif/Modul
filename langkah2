@@ -1,5 +1,7 @@
 Lakukan koneksi ke MongoDB menggunakan connection string. 
+![MOD2_01](https://github.com/abiyyudwif/Modul2/assets/145477675/8915277a-08f6-4f76-8457-b9b031cf9918)
 Buat database dengan melakukan klik “Create Database”
+
 Lakukan insert buku pertama dengan melakukan klik “Add Data”, pilih “Insert Document”, isi dengan data yang diinginkan dan klik “Insert”
 Lakukan insert buku kedua dengan cara yang sama.
 Lakukan pencarian buku dengan author “Osamu Dazai” dengan mengisi filter yang diinginkan dan klik “Find”
