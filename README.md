@@ -1,5 +1,6 @@
 Lakukan koneksi ke MongoDB menggunakan connection string. 
 ![MOD2_01](https://github.com/abiyyudwif/Modul2/assets/145477675/8915277a-08f6-4f76-8457-b9b031cf9918)
+![Alt text](MOD2_01)
 
 Buat database dengan melakukan klik “Create Database”
 ![MOD2_02](https://github.com/abiyyudwif/Modul2/assets/145477675/d5938838-6589-4362-86ea-fcb1c000869d)
