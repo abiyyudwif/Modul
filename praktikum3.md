@@ -1,6 +1,6 @@
 Lakukan npm init untuk mengenerate file package.json dengan menggunakan command npm init -y
 
-![Alt text](image.png)
+![Alt text](MOD3_01.png)
 
 Lakukan instalasi express, mongoose, dan dotenv dengan menggunakan command npm i express mongoose dotenv
 
