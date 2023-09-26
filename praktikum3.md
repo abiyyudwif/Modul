@@ -1,10 +1,10 @@
 Lakukan npm init untuk mengenerate file package.json dengan menggunakan command npm init -y
 
-![Alt text](MOD3_01.png)
+![Alt text](screenshot/MOD3_01.png)
 
 Lakukan instalasi express, mongoose, dan dotenv dengan menggunakan command npm i express mongoose dotenv
 
-![Alt text](image-1.png)
+![Alt text](screenshot/image-1.png)
 
 Buatlah file index.js pada root folder dan masukkan kode di bawah ini
 require('dotenv').config();
@@ -22,12 +22,12 @@ app.listen(PORT, () => {
 console.log(`Running on port ${PORT}`);
 })
 
-![Alt text](image-2.png)
+![Alt text](screenshot/image-2.png)
 
 Lakukan pembuatan file .env dan masukkan baris berikut
 PORT=5000
 
-![Alt text](image-3.png)
+![Alt text](screenshot/image-3.png)
 
 Setelah itu ubahlah kode pada listening port menjadi berikut dan coba jalankan aplikasi kembali
 const PORT = process.env.PORT || 8000;
@@ -35,12 +35,12 @@ app.listen(PORT, () => {
 console.log(`Running on port ${PORT}`);
 })
 
-![Alt text](image-4.png)
+![Alt text](screenshot/image-4.png)
 
 Copy connection string yang terdapat pada compas atau atlas dan paste kan pada .env seperti berikut
 MONGO_URI=mongodb://localhost:27017
 
-![Alt text](image-5.png)
+![Alt text](screenshot/image-5.png)
 
 Tambahkan baris kode berikut pada file index.js
 require('dotenv').config();
@@ -55,7 +55,7 @@ db.once('connected', () => {
 console.log('Mongo connected');
 })
 
-![Alt text](image-6.png)
+![Alt text](screenshot/image-6.png)
 
 Lakukan pembuatan direktori routes di tingkat yang sama dengan index.js
 Buatlah file book.route.js di dalamnya
@@ -68,7 +68,7 @@ message: 'mendapatkan semua buku'
 })
 module.exports = router;
 
-![Alt text](image-7.png)
+![Alt text](screenshot/image-7.png)
 
 Lakukan import book.route.js pada file index.js dan tambahkan baris kode berikut
 require('dotenv').config();
@@ -103,11 +103,11 @@ app.get('/', (req, res) => {
     console.log(`Running on port ${PORT}`);
     })
 
-![Alt text](image-8.png)
+![Alt text](screenshot/image-8.png)
 
 Uji salah satu endpoint dengan Postman
 
-![Alt text](image-9.png)
+![Alt text](screenshot/image-9.png)
 
 Salin baris kode dari routes untuk fungsi getAllBooks
 function getAllBooks(req, res) {
@@ -119,11 +119,11 @@ module.exports = {
 getAllBooks,
 }
 
-![Alt text](image-10.png)
+![Alt text](screenshot/image-10.png)
 
 Lakukan hal yang sama untuk getOneBook, createBook, updateBook, dan deleteBook
 
-![Alt text](image-11.png)
+![Alt text](screenshot/image-11.png)
 
 Lakukan import book.controller.js pada file book.route.js
 const router = require('express').Router();
@@ -131,7 +131,7 @@ const book = require('../controllers/book.controller'); //
 ...
 module.exports = router;
 
-![Alt text](image-12.png)
+![Alt text](screenshot/image-12.png)
 
 Lakukan perubahan pada fungsi agar dapat memanggil fungsi dari book.controller.js
 const router = require('express').Router();
@@ -145,7 +145,7 @@ module.exports = router;
 
 Lakukan pengujian kembali, pastikan response tetap sama
 
-![Alt text](image-13.png)
+![Alt text](screenshot/image-13.png)
 
 Lakukan pembuatan direktori models di tingkat yang sama dengan index.js
 Buatlah file book.model.js di dalamnya
@@ -173,16 +173,16 @@ type: String
 })
 module.exports = mongoose.model('book', bookSchema);
 
-![Alt text](image-15.png)
+![Alt text](screenshot/image-15.png)
 
 Hapus semua data pada collection books
 
-![Alt text](image-14.png)
+![Alt text](screenshot/image-14.png)
 
 Lakukan import book.model.js pada file book.controller.js
 const Book = require('../models/book.model');
 
-![Alt text](image-16.png)
+![Alt text](screenshot/image-16.png)
 
 Lakukan perubahan pada fungsi createBook
 const Book = require('../models/book.model');
@@ -210,7 +210,7 @@ error: error.message,
 }
 }
 
-![Alt text](image-17.png)
+![Alt text](screenshot/image-17.png)
 
 Buatlah dua buah buku dengan data di bawah ini dengan Postman
 {
@@ -231,7 +231,7 @@ Buatlah dua buah buku dengan data di bawah ini dengan Postman
 "publisher": "Pastel Books"
 }
 
-![Alt text](image-18.png)
+![Alt text](screenshot/image-18.png)
 
 Lakukan perubahan pada fungsi getAllBooks
 const Book = require('../models/book.model');
@@ -250,7 +250,7 @@ error: error.message,
 }
 }
 
-![Alt text](image-19.png)
+![Alt text](screenshot/image-19.png)
 
 Lakukan perubahan pada fungsi getOneBook
 const Book = require('../models/book.model');
@@ -271,15 +271,15 @@ error: error.message,
 }
 }
 
-![Alt text](image-20.png)
+![Alt text](screenshot/image-20.png)
 
 Tampilkan semua buku dengan Postman
 
-![Alt text](image-21.png)
+![Alt text](screenshot/image-21.png)
 
 Tampilkan buku Dilan 1990 dengan Postman
 
-![Alt text](image-22.png)
+![Alt text](screenshot/image-22.png)
 
 Lakukan perubahan pada fungsi updateBook
 async function updateBook(req, res) {
@@ -300,7 +300,7 @@ error: error.message,
 }
 }
 
-![Alt text](image-23.png)
+![Alt text](screenshot/image-23.png)
 
 Lakukan perubahan pada fungsi deleteBook
 async function deleteBook(req, res) {
@@ -319,7 +319,7 @@ error: error.message,
 }
 }
 
-![Alt text](image-24.png)
+![Alt text](screenshot/image-24.png)
 
 
 
