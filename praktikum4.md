@@ -11,23 +11,23 @@ POST, PUT, PATCH, DELETE, dan OPTIONS pada file web.php dengan code seperti
 ini,
 
 a. Kita dapat menginstall ekstensi dengan membuka panel extensions lalu mencari thunder client
-![Alt text](image01_4.png)
+![Alt text](image-1.png)
 
 b. Setelah menginstall Thunder Client, kita akan melihat logo seperti petir pada activity bar kita (sebelah kiri).
-![Alt text](image02_4.png)
+![Alt text](image-1.png)
 
 c. Kita dapat membuat request dengan menekan "New Request" pada ekstensi
-![Alt text](image03_4.png)
+![Alt text](image-2.png)
 
 d. Setelah itu kita dapat memasukkan method dan url yang dituju
-![Alt text](image04_4.png)
+![Alt text](image-3.png)
 
 Migrasi Database
 a. Sebelum melakukan migrasi database pastikan server database aktif kemudian
 pastikan sudah membuat database dengan nama lumenapi
 
 b. Kemudian ubah konfigurasi database pada file .env menjadi seperti ini
-![Alt text](image05_4.png)
+![Alt text](image-4.png)
 
 c. Setelah mengubah konfigurasi pada file .env, kita juga perlu menghidupkan
 beberapa library bawaan dari lumen dengan membuka file app.php pada folder
